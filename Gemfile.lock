@@ -99,7 +99,7 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.2)
-    mysql2 (0.4.3)
+    mysql2 (0.3.20)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     pry (0.10.3)
@@ -196,7 +196,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
-  mysql2
+  mysql2 (~> 0.3.20)
   pry-byebug
   pry-doc
   pry-rails
