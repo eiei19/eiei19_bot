@@ -13,6 +13,7 @@ gem 'haml-rails'
 gem 'rails_12factor', group: :production
 gem 'exception_notification', :github => 'smartinez87/exception_notification'
 gem 'slack-notifier'
+gem 'rest-client'
 
 group :development, :test do
   gem 'dotenv-rails'
