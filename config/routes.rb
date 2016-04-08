@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'callback#index'
-  post "/callback" => "index#contact"
+  post "/callback" => "callback#index"
 end
