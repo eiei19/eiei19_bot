@@ -10,8 +10,8 @@ class CallbackController < ApplicationController
       render json: [], status: :ng
       return
     end
-    from = params[:result][:content][:from]
-    text = params[:result][:content][:text]
+    from = params[:result][0][:content][:from]
+    text = params[:result][0][:content][:text]
     translated = translate(text)
     line_messaging(from, translated)
     render json: [], status: :ok
