@@ -1,4 +1,6 @@
 class CallbackController < ApplicationController
+  protect_from_forgery with: :null_session
+
   def index
     channel_secret = ENV["LINE_CHANNEL_SECRET"]
     http_request_body = request.raw_post
