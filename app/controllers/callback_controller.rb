@@ -42,6 +42,7 @@ class CallbackController < ApplicationController
             elements << {
               title: "「#{message[:message][:text]}」の検索結果#{index}",
               image_url: photo["image_url"],
+              subtitle: photo["photo_title"],
               buttons: [
                 {
                   type: "web_url",
