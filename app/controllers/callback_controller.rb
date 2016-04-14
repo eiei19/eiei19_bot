@@ -40,9 +40,9 @@ class CallbackController < ApplicationController
           elements = []
           res["info"]["photo"].each.with_index(1) do |photo, index|
             elements << {
-              title: "「#{message[:message][:text]}」の検索結果#{index}",
+              title: photo["photo_title"],
               image_url: photo["image_url"],
-              subtitle: photo["photo_title"],
+              subtitle: "「#{message[:message][:text]}」の検索結果#{index}",
               buttons: [
                 {
                   type: "web_url",
